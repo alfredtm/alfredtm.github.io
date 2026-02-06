@@ -1,0 +1,13 @@
+title: Alfred's Blog
+description: Personal blog by Alfred
+url: "https://alfredtm.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
