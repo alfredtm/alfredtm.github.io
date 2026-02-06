@@ -3,10 +3,11 @@ layout: default
 title: Home
 ---
 
-# {{ site.title }}
-
-{{ site.description }}
-
+<ul class="posts">
 {% for post in site.posts %}
-- **[{{ post.title }}]({{ post.url | relative_url }})** — {{ post.date | date: "%B %d, %Y" }}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+  </li>
 {% endfor %}
+</ul>
